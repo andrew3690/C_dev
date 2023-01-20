@@ -1,74 +1,36 @@
-#include <iostream>
+# include <iostream>
+# include <cmath>
 using namespace std;
 
-int main() {
-	//Prime Number
-	int n, count = 0;
-	for (int i = 0; i <= n; i++) {
-		if (n % i == 0) {
-			count++;
-		}
-	}
-	if (count == 2) {
-		cout<<"prime";
-	}
-	else {
-		cout << "not prime";
-	}
-	// Getting final digits
-	int n = 1724, r;
-	while (n > 0) {
-		r = n % 10;
-		n = n / 10;
-		cout << r << endl;
-	}
+int main(){
+    // Sum of first N natural numbers 
+    // int sum = 0,n = 10;
+    // for(int i = 0; i <= n; i++){
+    //     sum += i;
+    //     cout<<sum<<endl;
+    // }
 
-	// Armstrong Numbers
-	int r, sum = 0, n = 153, m;
-	m = n;
-	while (n > 0) {
-		r = n % 10;
-		n = n / 10;
-		sum = sum + (r * r * r);
-	}
+    // Factorial Number
+    // int n = 5,fact =1;
+    // for(int i = 1;i <= n;i++){
+    //     fact = fact *i;
+    // }
+    // cout<<fact;
+    
+    // Factors
+    // int n = 10;
+    // for(int i = 1;i <=n;i++){
+    //     if(n % i == 0){
+    //         cout<<i<<endl;
+    //     }
+    // }
 
-	if (sum == m)
-		cout << "Armstrong";
-	else
-		cout << "Not Armstrong";
-
-	// Reversing a number
-	int r, sum;
-	while (int n > 0) {
-		r = n % 10;
-		n = n / 10;
-		rev = rev * 10 + r;
-		cout << rev<<"";
-	}
-
-	// Palindrom of a number
-	int n, r, rev;
-	while (n > 0) {
-		r = n % 10;
-		n = n / 10;
-		rev = rev * 10 + r;
-	}
-
-	if (m == rev) {
-		cout << "palindrom";
-	}
-	else {
-		cout << "not a palindrom";
-	}
-
-	// GCD(MDC)
-
-	int greater = 169, sub = 17;
-	while (greater != sub) {
-		if (greater > sub)
-			greater = greater - sub;
-		else if (sub > greater)
-			sub = sub - greater;
-	}
-	cout << greater;
+    // Perfect Number
+    int n, sum = 0;
+    for(int i = 1;i <=n;i++){
+        if(n % i == 0){
+            sum += i;
+        }
+    }
+    cout<<sum;
 }

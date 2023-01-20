@@ -1,0 +1,8 @@
+Bitwise operators: 
+& - AND
+|| - OR
+^ - XOR
+~ - NOT
+<< - SHIFT LEFT -- Multiply by 2
+>> - SHIFT RIGTH -- divide by 2
+
