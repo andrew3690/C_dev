@@ -182,6 +182,23 @@ int LinearFunc(int A[], int n, int val){
 }
  */
 
+/* 
+//Function Pointer
+void display(){
+    cout<<"Hello"<<endl;
+}
+
+// testing function caller
+// getting the maximum value
+int max(int x, int y){
+    return x>y ? x:y;
+}
+// getting the minimum value
+int min(int x, int y){
+    return x<y?x:y;
+}
+*/
+
 int main(){
 /* 
     int val1 = 10, val2 = 5, val3;
@@ -248,7 +265,7 @@ g = 15; // reassining value to 15
 fun(); // callling function fun
 g++; // incrementing value after function
 cout<<g - 2; // printing it less 2
- */
+*/
 
 /* 
 g = 30;
@@ -258,23 +275,22 @@ g = 30;
 }
     cout<<g<<endl;// value of g inside main class
     cout<<::g<<endl; // block scope outsied value (not working)
- */
+*/
 
 /* 
 // re-calling function and incrementing it
 fun();
 fun();
 fun();
- */
+*/
 
 /* 
 int n = 5;
 fun(n);
  */
 
-
-// Linear Function
-/* 
+/*
+// Linear Function 
 int A[] = {2,3,4,55,6,9,8,10};
 int k;
 
@@ -283,7 +299,22 @@ cin>>k;
 int index = LinearFunc(A,8,k);
 
 cout<<"Showing values "<<index<<endl;
- */
+*/
+
+/* 
+void (*fp)();// creating variable pointer void
+fp = display;// calling the function display, by making it equal to the pointer
+(*fp)();// instancianting the pointer
+
+
+int (*fp)(int,int);
+fp = max;
+(*fp)(10,5);
+
+fp = min;
+(*fp)(10,5);
+
+*/
 
 return 0;
 }
