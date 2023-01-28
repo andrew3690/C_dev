@@ -1,6 +1,8 @@
 # include <iostream>
 using namespace std;
 
+// Note: object will consume memory one
+// y for data members. Functions will be common for all the objects in memory 
 //Default constructor
 class Rectangle{
     private: // by default, everything that isn't inside public scope is private 
@@ -84,7 +86,7 @@ class Rectangle{
         setLength(l);
         setBreadth(b);
     }
-
+ 
     // Shallow Copy Constructor
     // gets a reference of a class, and ressings it
     Rectangle( Rectangle &rect){
@@ -121,6 +123,7 @@ Rectangle::~Rectangle(){
     cout<<"Rectangle is destroyed";
 }
 
+// In struct everything is public, this is the main diference bettween classes and structs
 struct  Demo
 {
     int x;
@@ -177,10 +180,10 @@ void main (){
         cout<<"Is not a square";
     }
  */
-
+/* 
     Demo d;
     d.x = 10;
     d.y = 20;
     d.Display();
-    
+ */
 }
