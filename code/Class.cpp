@@ -135,7 +135,7 @@ struct  Demo
 };
 
 
-void main (){ 
+int main (){ 
 /* 
     // simple instatiantion
     Rectangle r1,r2;
