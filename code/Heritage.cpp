@@ -1,4 +1,4 @@
-#include <iostream>
+    #include <iostream>
 using namespace std;
 
 class Rectangle{
@@ -60,7 +60,6 @@ int Cuboid::volume(){
     return getlen() * getbre() * getheigth();
 }
 
-
 int main (){
       Cuboid c;
       c.setheigth(10);
@@ -68,5 +67,4 @@ int main (){
       c.setlen(8);
       c.area();
       c.volume();
-       
 }
